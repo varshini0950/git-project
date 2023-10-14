@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:#87CEEB;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.food-item {
+    margin: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+form {
+    margin-top: 30px;
+}
