@@ -1,6 +1,6 @@
 <html>
 <head>
-  
+      <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <h1>
@@ -21,6 +21,15 @@ $total_calories = 0;
     $chapati = $_POST['chapati'];
     $sweets = $_POST['sweets'];
     $fruits = $_POST['fruits'];
+    
+    // Calculate total calories
+    $total_calories = ($rice * $calories_per_gram['rice']) +
+                      ($vegcurry * $calories_per_gram['vegcurry']) +
+                      ($nonvegcurry * $calories_per_gram['nonvegcurry']) +
+                     ($chapati * $calories_per_gram['chapati']) +
+                     ($sweets * $calories_per_gram['sweets']) +
+                     ($fruits * $calories_per_gram['fruits']);
+                     echo (" <p style='font-size:30px'>Calorie Intake :$total_calories  cal</br> </p>");
        ?>
 </h1>
 </body>
