@@ -9,7 +9,9 @@ $a=$_POST['inp1'];
 $b=$_POST['inp2'];
 $c= $b * $b;
 $d= $a / $c;
-echo ("<p style='font-size:90px'> BMI: $d</br></p>");
+
+echo ("<p style='font-size:30px'> BMI: $d</br></p>");
+
 ?>
 </h1>
 </body>                     
