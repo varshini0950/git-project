@@ -1,7 +1,7 @@
 <html>
 <head>
 <title> BMI </title>
-<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 <h1>
@@ -10,15 +10,17 @@ $a=$_POST['inp1'];
 $b=$_POST['inp2'];
 $c= $b * $b;
 $d= $a / $c;
-$e=$_POST['exercise'];
-$f=$_POST['inp3'];
+
 if(isset($_POST['gender'])){
     $gender = $_POST['gender'];
 echo ("<p style='font-size:30px'>Gender: $gender</p>");}
 else{
 echo ("<p style='font-size:30px'>Gender not selected</p>");
 }
+$p=$_POST['inp5'];
+echo ("<p style='font-size:30px'>Age: $p years<br></p>");
+echo ("<p style='font-size:30px'>BMI: $d years<br></p>");
 ?>
-</p>
+</h1>
  </body>
  </html>
