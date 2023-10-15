@@ -5,12 +5,20 @@
 <body>
 <h1>
 <?php
-$a=$_POST['inp1'];
-$b=$_POST['inp2'];
-$c= $b * $b;
-$d= $a / $c;
+$e=$_POST['exercise'];
+if($e =="cycling")
+{
+$i= 16.66 * $f;
+echo ("<p style='font-size:30px'>calories burnt:$i cal</br></p>");
 
-echo ("<p style='font-size:30px'> BMI: $d</br></p>");
+}
+if($e =="walking")
+{
+$i= 6.17 * $f;
+echo ("<p style='font-size:30px'>calories burnt:$i cal</br></p>");
+}
+$diff = $total_calories -$i ;
+                    echo ("<p style='font-size:30px'>  Net Calorie = $diff cal</br> </p>");
 
 ?>
 </h1>
