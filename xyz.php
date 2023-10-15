@@ -8,3 +8,7 @@
 <?php
 $a=$_POST['inp1'];
 $b=$_POST['inp2'];
+$c= $b * $b;
+$d= $a / $c;
+$e=$_POST['exercise'];
+$f=$_POST['inp3'];
