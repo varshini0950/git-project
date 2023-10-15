@@ -7,6 +7,7 @@
 <?php
 
 $e=$_POST['exercise'];
+$f=$_POST['inp3'];
 if($e =="cycling")
 {
 $i= 16.66 * $f;
@@ -18,8 +19,19 @@ if($e =="walking")
 $i= 6.17 * $f;
 echo ("<p style='font-size:30px'>calories burnt:$i cal</br></p>");
 }
+if($e =="yoga")
+{
+$i= 8.33 * $f;
+echo ("<p style='font-size:30px'>calories burnt:$i cal</br></p>");
+}
+if($e =="jogging")
+{
+$i= 11.66 * $f;
+echo ("<p style='font-size:30px'> calories burnt:$i cal</br></p>");
+}
+
 $diff = $total_calories -$i ;
-                    echo ("<p style='font-size:30px'>  Net Calorie = $diff cal</br> </p>");
+echo ("<p style='font-size:30px'>  Net Calorie = $diff cal</br> </p>");
 
 
 ?>
